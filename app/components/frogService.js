@@ -4,7 +4,9 @@ import Frog from "../models/frog.js";
 
 
 let _state = {
-    frogs: []
+    frogs: [new Frog({ name: 'Slippy', color: 'green' }),
+    new Frog({ name: 'Hoppy', color: 'red' }),
+    new Frog({ name: 'Kermit', color: 'pink' })]
 
 }
 
@@ -20,6 +22,8 @@ function _setState(propName, data) {
     });
 
 }
+
+
 
 
 //PUBLIC

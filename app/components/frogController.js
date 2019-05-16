@@ -3,7 +3,9 @@ import FrogService from "./frogService.js";
 //PRIVATE
 let _frogService = new FrogService();
 
+function _drawFrogs() {
 
+}
 
 
 
