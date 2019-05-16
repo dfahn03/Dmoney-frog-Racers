@@ -38,4 +38,7 @@ export default class FrogService {
         return _state.frogs.map(f => new Frog(f))
 
     }
+    startRace() {
+        //some sort of method to assign each frog object a random time
+    }
 }

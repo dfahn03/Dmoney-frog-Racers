@@ -23,4 +23,7 @@ export default class FrogController {
         console.log('ribbit controller');
         _drawFrogs()
     }
+    startRace() {
+
+    }
 }
