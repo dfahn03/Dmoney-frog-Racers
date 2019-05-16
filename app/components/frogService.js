@@ -43,16 +43,21 @@ export default class FrogService {
         let frogs = _state.frogs
         for (let i = 0; i < frogs.length; i++) {
             let frog = frogs[i];
-
+            frog.racing = true;
             let time = Math.random() * 5 + 1
 
             setTimeout(() => {
                 frog.time = time
+                frog.racing = false;
+                frogs.sort(function (a, b) {
+                    return a.time - b.time
+                })
                 _setState("frogs", frogs)
 
 
             }, time * 1000);
         }
+        _setState("frogs", frogs)
     }
     addSubscribers(propName, fn) {
         _subscribers[propName].push(fn)
