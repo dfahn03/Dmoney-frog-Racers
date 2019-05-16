@@ -11,5 +11,7 @@ import Frog from "../models/frog.js";
 //PUBLIC
 
 export default class FrogService {
-
+    constructor() {
+        console.log('ribbit service');
+    }
 }

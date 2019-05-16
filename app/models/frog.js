@@ -4,4 +4,8 @@ export default class Frog {
         this.time = data.time
         this.color = data.color
     }
+    get template() {
+
+    }
 }
+
