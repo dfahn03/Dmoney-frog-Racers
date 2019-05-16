@@ -54,4 +54,7 @@ export default class FrogService {
             }, time * 1000);
         }
     }
+    addSubscribers(propName, fn) {
+        _subscribers[propName].push(fn)
+    }
 }

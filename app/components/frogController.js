@@ -22,8 +22,10 @@ export default class FrogController {
     constructor() {
         console.log('ribbit controller');
         _drawFrogs()
+        _frogService.addSubscribers('frogs', _drawFrogs)
     }
     startRace() {
         _frogService.startRace()
     }
+
 }

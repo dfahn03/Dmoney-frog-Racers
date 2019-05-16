@@ -1,7 +1,7 @@
 export default class Frog {
     constructor(data) {
         this.name = data.name
-        this.time = 0
+        this.time = data.time || 0
         this.color = data.color
     }
     get Template() {
