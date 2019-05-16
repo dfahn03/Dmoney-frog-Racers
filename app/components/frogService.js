@@ -31,5 +31,11 @@ function _setState(propName, data) {
 export default class FrogService {
     constructor() {
         console.log('ribbit service');
+
+
+    }
+    get Frogs() {
+        return _state.frogs.map(f => new Frog(f))
+
     }
 }
