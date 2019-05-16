@@ -24,6 +24,6 @@ export default class FrogController {
         _drawFrogs()
     }
     startRace() {
-
+        _frogService.startRace()
     }
 }

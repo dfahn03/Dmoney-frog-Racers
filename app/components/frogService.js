@@ -40,5 +40,18 @@ export default class FrogService {
     }
     startRace() {
         //some sort of method to assign each frog object a random time
+        let frogs = _state.frogs
+        for (let i = 0; i < frogs.length; i++) {
+            let frog = frogs[i];
+
+            let time = Math.random() * 5 + 1
+
+            setTimeout(() => {
+                frog.time = time
+                _setState("frogs", frogs)
+
+
+            }, time * 1000);
+        }
     }
 }
