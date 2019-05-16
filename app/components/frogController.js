@@ -5,10 +5,13 @@ let _frogService = new FrogService();
 
 function _drawFrogs() {
     let frogs = _frogService.Frogs
+    let template = ''
     for (let i = 0; i < frogs.length; i++) {
         let frog = frogs[i];
         console.log('Frog', frog)
+        template += frog.Template
     }
+    document.getElementById('frogs').innerHTML = template;
 }
 
 
