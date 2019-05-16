@@ -4,9 +4,9 @@ import Frog from "../models/frog.js";
 
 
 let _state = {
-    frogs: [new Frog({ name: 'Slippy', color: 'green' }),
-    new Frog({ name: 'Hoppy', color: 'red' }),
-    new Frog({ name: 'Kermit', color: 'pink' })]
+    frogs: [new Frog({ name: 'Slippy', color: 'Green' }),
+    new Frog({ name: 'Hoppy', color: 'Red' }),
+    new Frog({ name: 'Kermit', color: 'Pink' })]
 
 }
 
@@ -53,8 +53,6 @@ export default class FrogService {
                     return a.time - b.time
                 })
                 _setState("frogs", frogs)
-
-
             }, time * 1000);
         }
         _setState("frogs", frogs)
